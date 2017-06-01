@@ -1,0 +1,12 @@
+<div class="row" *ngIf="users">
+    <div class="col-sm-4" *ngFor="let user of users; let i = index">
+        <div class="profile-card">
+            <img [src]="user.avatar" class="img-responsive img-circle">
+
+            <h2>{{ user.name }}</h2>
+
+            <p><a href="#">{{ user.username }}</a></p>
+        </div>
+    </div>
+</div>
+
